@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 export const colors = {
-  background: "#FFE0FA",
-  button: "#D39EE3",
-  hover: "#B989C7",
+  background: "#11001c",
+  hover: "#a06cd5",
+  footerHover: "#72369d",
   text: "#FFF",
 };
 
@@ -15,16 +15,21 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
     font-family: "Roboto Mono", monospace;
     text-decoration: none;
+    color: ${colors.text};
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   .container {
-    max-width: 1200px;
+    max-width: 1024px;
     width: 100%;
     margin: 0 auto;
   }
 
   body {
-    background-color: ${colors.background};
+    background: ${colors.background};
   }
 `;
 
