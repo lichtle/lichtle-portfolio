@@ -1,21 +1,20 @@
-import { HeaderContainer, Navbar, Button } from "./styles";
+import { HeaderContainer, Navbar, Link } from "./styles";
 
 const Header = () => (
   <HeaderContainer>
-    <button>LIGHT THEME</button>
     <nav>
       <Navbar>
         <li>
-          <Button type="button">Home</Button>
+          <Link href="#home">Home</Link>
         </li>
         <li>
-          <Button type="button">Sobre</Button>
+          <Link href="#about">Sobre</Link>
         </li>
         <li>
-          <Button type="button">Projetos</Button>
+          <Link href="#projects">Projetos</Link>
         </li>
         <li>
-          <Button type="button">Contato</Button>
+          <Link href="#contact">Contato</Link>
         </li>
       </Navbar>
     </nav>
