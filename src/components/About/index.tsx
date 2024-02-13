@@ -1,26 +1,35 @@
-import { Title } from "./styles";
-import Section from "../Section";
+import { AboutContainer, Title } from "./styles";
+
+import kitty from "../../assets/kitty-with-pencil.png";
 
 const About = () => (
   <>
-    <Title>Sobre mim</Title>
-    <Section>
-      <>
-        <img
-          src="../../assets/kitty-with-pencil.png"
-          alt="Gatinho segurando um lápis"
-        />
+    <Title id="about">Sobre mim</Title>
+    <AboutContainer>
+      <img src={kitty} alt="Gatinho segurando um lápis" />
+      <div>
         <p>
-          É um prazer ter você aqui! Me chamo Leticia, tenho 24 anos e sou
-          natural de São Lourenço - MG mas atualmente moro em Santo André - SP.
-          Sou estudante de desenvolvimento front-end, metalhead e amante de
-          gatinhos. Sou formada, desde 2021, em Gastronomia pelo Centro
-          Universitário Senac - Campos do Jordão, mas não me encontrei na área e
-          estou em transição de carreira. As coisas que mais gosto de fazer são
+          É um prazer ter você aqui! Me chamo Leticia, tenho 24 anos e moro em
+          Santo André - SP. Sou estudante de desenvolvimento front-end,
+          metalhead e amante de gatinhos. As coisas que mais gosto de fazer são
           cozinhar, ouvir música, jogar e viajar!
         </p>
-      </>
-    </Section>
+        <p>
+          Sou formada em Gastronomia pelo Centro Universitário Senac - Campos do
+          Jordão (2021), mas estou em transição de carreira para a área da
+          programação.
+        </p>
+        <p>
+          Tive a oportunidade de ser trainee back-end em uma empresa americana
+          por 3 meses (
+          <a href="https://locallabs.com/" target="_blank">
+            LocalLabs
+          </a>
+          ), então também possuo conhecimento básico em Ruby e SQL. Também
+          possuo certificado em Excel Básico e habilidades no Canva.
+        </p>
+      </div>
+    </AboutContainer>
   </>
 );
 
