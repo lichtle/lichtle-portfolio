@@ -12,7 +12,12 @@ const About = () => (
           É um prazer ter você aqui! Me chamo Leticia, tenho 24 anos e moro em
           Santo André - SP. Sou estudante de desenvolvimento front-end,
           metalhead e amante de gatinhos. As coisas que mais gosto de fazer são
-          cozinhar, ouvir música, jogar e viajar!
+          cozinhar, ouvir música, jogar e viajar! Além disso, gosto muito de
+          ajudar meus colegas, então criei um{" "}
+          <a href="https://www.instagram.com/frontendkitty/" target="_blank">
+            perfil no Instagram
+          </a>{" "}
+          voltado para dicas simples de desenvolvimento front-end. &#x1F638;
         </p>
         <p>
           Sou formada em Gastronomia pelo Centro Universitário Senac - Campos do

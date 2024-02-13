@@ -10,6 +10,10 @@ export const AboutContainer = styled.div`
   padding: 80px 64px;
 
   div {
+    a {
+      color: ${colors.hover};
+    }
+
     p {
       line-height: 28px;
       margin-bottom: 16px;
@@ -20,7 +24,7 @@ export const AboutContainer = styled.div`
       transition: 0.3s ease-in-out;
 
       &:hover {
-        color: ${colors.hover};
+        color: ${colors.footerHover};
       }
     }
   }
