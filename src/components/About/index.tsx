@@ -12,8 +12,8 @@ const About = () => (
           É um prazer ter você aqui! Me chamo Leticia, tenho 24 anos e moro em
           Santo André - SP. Sou estudante de desenvolvimento front-end,
           metalhead e amante de gatinhos. As coisas que mais gosto de fazer são
-          cozinhar, ouvir música, jogar e viajar! Além disso, gosto muito de
-          ajudar meus colegas, então criei um{" "}
+          cozinhar, ouvir música, jogar e viajar! Também gosto muito de ajudar
+          meus colegas, então criei um{" "}
           <a href="https://www.instagram.com/frontendkitty/" target="_blank">
             perfil no Instagram
           </a>{" "}
@@ -31,7 +31,8 @@ const About = () => (
             LocalLabs
           </a>
           ), então também possuo conhecimento básico em Ruby e SQL. Também
-          possuo certificado em Excel Básico e habilidades no Canva.
+          possuo certificado em Excel Básico e habilidades no Canva. Fique à
+          vontade para me contatar, vamos desenvolver juntos!
         </p>
       </div>
     </AboutContainer>
