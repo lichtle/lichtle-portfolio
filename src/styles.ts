@@ -7,6 +7,11 @@ export const colors = {
   text: "#FFF",
 };
 
+export const breakpoints = {
+  mobile: "640px",
+  tablet: "1024px",
+};
+
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;

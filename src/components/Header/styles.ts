@@ -15,7 +15,6 @@ export const Navbar = styled.ul`
 `;
 
 export const Link = styled.a`
-  background-color: ${colors.background};
   padding: 8px 22px;
   border-bottom: 3px solid ${colors.text};
   font-size: 18px;
