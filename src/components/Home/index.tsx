@@ -4,7 +4,7 @@ import profile from "../../assets/profile.jpeg";
 import paws from "../../assets/paws.png";
 
 const Home = () => (
-  <HomeContainer id="home">
+  <HomeContainer>
     <Intro>
       <span>Olá! Meu nome é</span>
       <h1>Leticia Fernandes</h1>

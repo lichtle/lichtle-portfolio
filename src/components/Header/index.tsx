@@ -5,9 +5,6 @@ const Header = () => (
     <nav>
       <Navbar>
         <li>
-          <Link href="#home">Home</Link>
-        </li>
-        <li>
           <Link href="#about">Sobre</Link>
         </li>
         <li>
