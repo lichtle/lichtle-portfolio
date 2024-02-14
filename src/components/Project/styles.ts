@@ -67,11 +67,11 @@ export const ModalContent = styled.div`
 
 export const InfosContainer = styled.div`
   .close-button {
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 12px;
+    right: 12px;
     cursor: pointer;
   }
 
@@ -88,7 +88,7 @@ export const InfosContainer = styled.div`
 
   .project-image {
     width: 100%;
-    height: 350px;
+    height: 330px;
     object-fit: cover;
     margin-bottom: 16px;
   }

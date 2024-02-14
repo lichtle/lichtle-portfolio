@@ -12,7 +12,7 @@ import {
 
 import { ProjectsType } from "../../utils/projects";
 
-import close from "../../assets/close.png";
+import close from "../../assets/close.png"; // Close button icons created by Hogr on Flaticon - https://www.flaticon.com/free-icons/close-button>
 
 type Props = {
   project: ProjectsType;
@@ -76,7 +76,7 @@ const Project = ({ project }: Props) => {
                   <a href={project.repository} target="_blank">
                     Link do repositório
                   </a>
-                  <a href={project.repository} target="_blank">
+                  <a href={project.deploy} target="_blank">
                     Link do projeto (deploy)
                   </a>
                 </LinkGroup>
