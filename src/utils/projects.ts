@@ -21,7 +21,7 @@ export const Projects: ProjectsType[] = [
     icon: "https://i.ibb.co/0s2gjyg/efood.png",
     image: `${efood}`,
     description:
-      "Este projeto foi a tarefa final do curso Engenheiro Front-End da EBAC. Foi o mais desafiador e complexo que já fiz até então, principalmente pelo uso de bibliotecas de autenticação de formulário que eu nunca tinha tido contato prévio. Tenho muito orgulho de tê-lo concluído!",
+      "Empresa de delivery fictícia. Possui uma lista de restaurantes, menu de cada restaurante, interações com o carrinho e formulário de pagamento. Foi o mais desafiador e complexo que já fiz até então, principalmente pelo uso de bibliotecas de autenticação de formulário que eu nunca tinha tido contato prévio. Tenho muito orgulho de tê-lo concluído!",
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
@@ -53,7 +53,7 @@ export const Projects: ProjectsType[] = [
     icon: "https://i.ibb.co/jzSYhcT/Level-up.png",
     image: `${levelUp}`,
     description:
-      "Este projeto foi desenvolvido durante o curso Engenheiro Front-End da EBAC. Foi bem divertido desenvonvê-lo, principalmente por ser relacionado a um tema que gosto: jogos!",
+      "Loja de games fictícia desenvolvida durante o curso Engenheiro Front-End da EBAC. Possui uma lista de jogos, detalhes de cada jogo, galeria, carrinho e formulário de pagamento (cartão de crédito e boleto). Foi bem divertido desenvonvê-lo, principalmente por ser relacionado a um tema que gosto: jogos!",
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
