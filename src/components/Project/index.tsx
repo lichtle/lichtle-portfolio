@@ -46,9 +46,11 @@ const Project = ({ project }: Props) => {
           <img src={project.icon} alt={project.name} />
         </button>
         <Technologies>
-          {project.technologies.map((tech) => (
-            <img key={tech} src={tech} alt="Tecnologias" />
-          ))}
+          <div>
+            {project.technologies.map((tech) => (
+              <img key={tech} src={tech} alt="Tecnologias" />
+            ))}
+          </div>
         </Technologies>
       </Card>
 

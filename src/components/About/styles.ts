@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { colors } from "../../styles";
+import { breakpoints, colors } from "../../styles";
 
 export const AboutContainer = styled.div`
   display: flex;
@@ -31,6 +31,35 @@ export const AboutContainer = styled.div`
 
   img {
     width: 150px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    gap: 64px;
+    padding: 64px 32px 24px;
+
+    div {
+      p {
+        line-height: 26px;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+    }
+
+    img {
+      width: 120px;
+    }
+  }
+
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    padding: 64px;
+
+    div {
+      p {
+        text-align: center;
+      }
+    }
   }
 `;
 

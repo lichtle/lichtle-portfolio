@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { colors } from "../../styles";
+import { breakpoints, colors } from "../../styles";
 
 export const ContactContainer = styled.div`
   padding: 80px 0;
@@ -10,12 +10,19 @@ export const ContactContainer = styled.div`
   justify-content: center;
   gap: 32px;
   font-size: 18px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 32px;
+    font-size: 14px;
+    gap: 48px;
+  }
 `;
 
 export const ContactIcon = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
 
   a {
     color: ${colors.hover};
@@ -24,5 +31,10 @@ export const ContactIcon = styled.div`
     &:hover {
       color: ${colors.footerHover};
     }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    justify-content: center;
+    text-align: center;
   }
 `;

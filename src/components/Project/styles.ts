@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { Technologies } from "../Home/styles";
-import { colors } from "../../styles";
+import { breakpoints, colors } from "../../styles";
 
 export const Card = styled.div`
   button {
@@ -58,11 +58,19 @@ export const Modal = styled.div`
 
 export const ModalContent = styled.div`
   background-color: ${colors.background};
+  color: ${colors.text};
+  width: 650px;
   padding: 48px 22px 22px;
   position: relative;
   z-index: 1;
-  color: ${colors.text};
-  width: 650px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 100%;
+  }
+
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
+    width: 90%;
+  }
 `;
 
 export const InfosContainer = styled.div`
@@ -81,6 +89,7 @@ export const InfosContainer = styled.div`
   }
 
   p {
+    font-size: 16px;
     max-width: 100%;
     text-align: justify;
     line-height: 22px;
@@ -91,6 +100,40 @@ export const InfosContainer = styled.div`
     height: 330px;
     object-fit: cover;
     margin-bottom: 16px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    text-align: center;
+
+    .close-button {
+      width: 16px;
+      height: 16px;
+      top: 16px;
+      right: 16px;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .project-image {
+      height: 110px;
+    }
+  }
+
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
+    .project-image {
+      height: 200px;
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 `;
 
@@ -109,10 +152,31 @@ export const ProjectDetails = styled.div`
       display: flex;
       align-items: center;
       gap: 8px;
+      font-size: 16px;
 
       img {
         width: 18px;
         height: 18px;
+      }
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 16px;
+
+    .details {
+      .technologies {
+        font-size: 12px;
+      }
+    }
+  }
+
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
+    gap: 32px;
+
+    .details {
+      .technologies {
+        font-size: 14px;
       }
     }
   }
@@ -130,6 +194,20 @@ export const LinkGroup = styled.div`
 
     &:hover {
       border-color: ${colors.footerHover};
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    gap: 16px;
+
+    a {
+      font-size: 12px;
+    }
+  }
+
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
+    a {
+      font-size: 14px;
     }
   }
 `;

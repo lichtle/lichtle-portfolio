@@ -27,15 +27,17 @@ const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
+  body {
+    background: ${colors.background};
+  }
+
   .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
   }
 
-  body {
-    background: ${colors.background};
-  }
+  
 `;
 
 export default GlobalStyle;

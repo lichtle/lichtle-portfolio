@@ -1,12 +1,22 @@
 import styled from "styled-components";
 
-import { colors } from "../../styles";
+import { breakpoints, colors } from "../../styles";
 
 export const HomeContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 80px 32px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    padding: 32px;
+  }
+
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    padding: 32px;
+  }
 `;
 
 export const Intro = styled.div`
@@ -32,14 +42,56 @@ export const Intro = styled.div`
     width: 500px;
     padding: 48px 0;
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+
+    img.divider {
+      width: 100%;
+      padding: 32px 0;
+    }
+  }
+
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const Technologies = styled.div`
   display: flex;
   gap: 16px;
+  margin-bottom: 16px;
 
-  img {
-    width: 25px;
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    img {
+      width: 25px;
+    }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    margin-bottom: 32px;
+
+    div {
+      justify-content: center;
+      align-items: center;
+      padding: 0 32px;
+    }
   }
 `;
 
@@ -53,5 +105,23 @@ export const Profile = styled.div`
     border-radius: 50%;
     padding: 8px;
     border: 2px solid ${colors.text};
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 16px 0;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
+    padding: 32px 0;
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
   }
 `;
