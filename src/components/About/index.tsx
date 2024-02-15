@@ -10,7 +10,7 @@ const About = () => (
       <div>
         <p>
           É um prazer ter você aqui! Me chamo Leticia, tenho 24 anos e moro em
-          Santo André - SP. Sou estudante de desenvolvimento front-end,
+          Santo André - SP. Sou desenvolvedora front-end,
           metalhead e amante de gatinhos. As coisas que mais gosto de fazer são
           cozinhar, ouvir música, jogar e viajar! Também gosto muito de ajudar
           meus colegas, então criei um{" "}
