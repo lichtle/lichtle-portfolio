@@ -2,4 +2,4 @@
 
 Este repositório contém o meu portfólio! 🐱💝
 
-<a href="https://leticia-fernandes-portfolio.vercel.app/" target="_blank">Clique aqui para ver o deploy</a>
+[Clique aqui para ver o deploy](https://leticia-fernandes-portfolio.vercel.app/)
