@@ -63,6 +63,16 @@ const Home = () => (
             alt="Less"
             title="Less"
           />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+            alt="npm"
+            title="npm"
+          />
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg"
+            alt="Vite"
+            title="Vite"
+          />
         </div>
       </Technologies>
       <Technologies>
